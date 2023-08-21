@@ -52,7 +52,7 @@ SimpleForm.setup do |config|
     b.optional :readonly
 
     ## Inputs
-    b.use :label_input, class: "visuall-hidden"
+    b.use :label, class: "visually-hidden"
     b.use :input, class: 'form_input', error_class: "form__input--invalid"
     b.use :hint,  wrap_with: { tag: :span, class: :hint }
     b.use :error, wrap_with: { tag: :span, class: :error }
