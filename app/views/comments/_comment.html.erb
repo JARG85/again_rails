@@ -9,7 +9,7 @@
   </p>
   <p>
     <%# the next line define the article of comment and comment self %>
-    <%= link_to "Destroy Comment", [comment.article, comment] 
+    <%= link_to "Destroy Comment", [comment.article, comment], 
       data: {
         turbo_method: :delete,
         turbo_confirm: "Are you sure?"
