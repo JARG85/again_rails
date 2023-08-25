@@ -5,7 +5,9 @@ class QuotesController < ApplicationController
     @quotes = Quote.ordered
   end
 
-  def show; end
+  def show
+    @article = Article.new
+  end
 
   def new
     @quote = Quote.new
